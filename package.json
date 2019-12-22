@@ -3,13 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.7.2",
+    "@material-ui/icons": "^4.5.1",
+    "antd": "^3.26.0",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.4.1",
+    "material-ui-pickers": "^2.2.4",
+    "noty": "^3.2.0-beta",
     "react": "^16.12.0",
+    "react-datepicker": "^2.10.1",
+    "react-dates": "^21.5.1",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "reactstrap": "^8.2.0"
   },
+  "proxy": "http://localhost:8080",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "aws s3 sync build/ s3://jobtrackerusidtest-app",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
